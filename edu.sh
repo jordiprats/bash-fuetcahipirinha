@@ -22,7 +22,7 @@ do
         FIELDS="${FIELDS} -F ${NAME}=${VALUE}"
     done < "INPUT.${TIMESTAMP}"
 
-    curl -b "${USERNAME}.${TIMESTAMP}" -X POST $FIELDS 'http://ripollesliders.cat/votacions.php?c=5'
+    curl -b "${USERNAME}.${TIMESTAMP}" -X POST $FIELDS 'http://ripollesliders.cat/votacions.php?c=5' >/dev/null 2>/dev/null
 
     rm -f "INPUT.${TIMESTAMP}" "${USERNAME}.${TIMESTAMP}"
 
