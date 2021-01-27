@@ -22,6 +22,8 @@ do
         FIELDS="${FIELDS} -F ${NAME}=${VALUE}"
     done < "INPUT.${TIMESTAMP}"
 
+    sleep "$(echo $RANDOM | grep -Eo ^[0-9])s"
+
     curl -b "${USERNAME}.${TIMESTAMP}" -X POST $FIELDS 'http://ripollesliders.cat/votacions.php?c=5' >/dev/null 2>/dev/null
 
     rm -f "INPUT.${TIMESTAMP}" "${USERNAME}.${TIMESTAMP}"
