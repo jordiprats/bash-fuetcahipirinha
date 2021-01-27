@@ -12,7 +12,7 @@ do
 
     curl -X POST -F "RL_username=${USERNAME}" -F "RL_password=${PASSWORD}" -c "${USERNAME}.${TIMESTAMP}" http://ripollesliders.cat/ > /dev/null 2>&1
 
-    curl -b "${USERNAME}.${TIMESTAMP}" 'http://ripollesliders.cat/votacions.php?c=5' 2>/dev/null | strings | grep Casanova -A 10 | sed 's/>/>\n/g' |sed -n "/<form/,/<\/form>/p" | grep input | grep hidden > "INPUT.${TIMESTAMP}"
+    curl -b "${USERNAME}.${TIMESTAMP}" 'http://ripollesliders.cat/votacions.php?c=5' 2>/dev/null | strings | grep Casanova -A 10 | sed 's/>/>\n/g' | sed -n "/<form/,/<\/form>/p" | grep input | grep hidden > "INPUT.${TIMESTAMP}"
 
     FIELDS=""
     while read -r LINE;
