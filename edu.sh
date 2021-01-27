@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sleep "$(echo $RANDOM | grep -Eo ^[0-9][0-9])m"
+
 DIRNAME="$(dirname $0)"
 
 for KEYPAR in $(cat "${DIRNAME}/passwords.txt");
