@@ -1,6 +1,8 @@
 #!/bin/bash
 
-for KEYPAR in $(cat passwords.txt);
+DIRNAME="$(dirname $0)"
+
+for KEYPAR in $(cat "${DIRNAME}/passwords.txt");
 do
     USERNAME="$(echo "$KEYPAR" | cut -f1 -d:)"
     PASSWORD="$(echo "$KEYPAR" | cut -f2- -d:)"
