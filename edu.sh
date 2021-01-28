@@ -4,6 +4,7 @@ sleep "$(echo $RANDOM | grep -Eo ^[0-9][0-9])m"
 
 DIRNAME="$(dirname $0)"
 
+OLD_IFS="${IFS}"
 IFS="
 "
 for KEYPAR in $(cat "${DIRNAME}/passwords.txt");
@@ -49,5 +50,6 @@ do
     sleep "$(echo $RANDOM | grep -Eo ^[0-9])m"
 
 done
+IFS="${OLD_IFS}"
 
 echo "FI"
