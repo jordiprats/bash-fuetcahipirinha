@@ -7,7 +7,7 @@ DIRNAME="$(dirname $0)"
 OLD_IFS="${IFS}"
 IFS="
 "
-for KEYPAR in $(cat "${DIRNAME}/passwords.txt");
+for KEYPAR in $(cat "${DIRNAME}/passwords.txt" | shuf);
 do
     USERNAME="$(echo "$KEYPAR" | cut -f1 -d:)"
     PASSWORD="$(echo "$KEYPAR" | cut -f2- -d:)"
