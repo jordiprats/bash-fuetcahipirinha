@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Onzena Edici&oacute; Ripoll&egrave;s L&iacute;ders 2020</title>
+<link href="estils.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/calibri.font.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	Cufon.replace('.Calibri', { fontFamily: 'calibri' });
+});
+
+//TopUp.images_path = "js/topup/images/top_up/";
+//TopUp.players_path = "js/topup/players/";
+
+function borra_input(caixa,texte){
+	if(caixa.value==texte){
+		caixa.value = "";
+	}
+}
+
+function restaura_input(caixa,texte){
+	if(caixa.value==""){
+		caixa.value=texte;
+	}
+}
+
+</script><script type="text/javascript" src="js/topup/jquery/*.js"></script>
+<script type="text/javascript" src="js/topup/top_up-min.js"></script>
+<script type="text/javascript">
+TopUp.images_path = "js/topup/images/top_up/";
+TopUp.players_path = "js/topup/players/";
+</script>
+</head>
+
+<body>
+<div id="container">
+  
+    <div id="head">
+    	<div id="url" class="t15">www.ripollesliders.cat</div>
+        <div id="text_head">
+        <span class="Calibri t24">Inscriu-te i registra't <br />per participar als premis.</span><br /><span class="Calibri italic t15 lh08">Atenció, només els usuaris registrats poden<br />afegir candidatures, votar i participar.</span><br /><br />
+        <a href="inscripcio.php"><img src="img/boto_inscriu.gif" alt="" width="280" height="65" border="0" /></a></div>
+    </div><!-- head -->
+    <div id="subhead"  >
+    	<div id="menu" class="Calibri blanc t17 nosub"><a href="presentacio.php">Presentació</a> | <a href="candidatures.php">Categories</a> | <a href="bases.php">Bases</a> |  <a href="entitats.php">Entitats</a> | <a href="contacte.php">Contacte</a> | <a href="registre.php">Registra't ara</a></div>
+        <div id="login"  style="background-color:#F00">
+                <span class="Calibri blanc t17 nosub">Benvingut/da Agustín! | <a href="registre.php">Modificar dades</a> | <a href="logout.php">Sortir</a></span>
+                </div>
+    </div><div class="avis Calibri t15"></div>
+
+<table width="950" border="0" cellspacing="0" cellpadding="0" class="t11">
+
+		  <tr class="nolinia2">
+			<td width="130" valign="top" class="liniadta t17"><img src="img/img_candidat.jpg" alt="" width="100" height="75" /></td>
+			<td valign="top"><span class="t17"><strong>333 Corporate</strong></span><br />
+			  <span class="excerpt">Empresa innovadora en el secor porcí que treballa des del Ripollès per tot el mon.</span></td>
+			<td width="116" valign="top" nowrap="nowrap">Vots actuals:<br /><div class="requadre_vots">
+				<div class="requadre_borde">
+					<div class="requadre_color verd" style="width: 121px"></div>
+				</div><span class="bold">49.28%</span> (3515)
+			</div>
+			</td>  
+			
+			<td valign="top" nowrap="nowrap" class="t14 blau"><form style="margin: 15px 0 0 0" action="votacions.php" name="form10" id="form10" method="post"><input type="hidden" name="c" id="c" value="5"><input type="hidden" name="d" id="d" value="10"><input type="hidden" name="h" id="h" value="eqwoitvyopmcqghiurvmhgi5urqcfjiochsgf9042t4809mgycfhoieanfghoighgjsuvng90q34cmghq10rwt8mc4qg3qvg632awcgcvwm84p9yw3ghawnbr"><input type="hidden" name="v" id="v" value="1"><input type="submit" value="votar" /></form></td>
+		  </tr>
+		  <tr class="liniainf">
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		  </tr>
+		  <tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		  </tr>
+		  <tr class="nolinia2">
+			<td width="130" valign="top" class="liniadta t17"><img src="img/img_candidat.jpg" alt="" width="100" height="75" /></td>
+			<td valign="top"><span class="t17"><strong>Hermanos Casanovas</strong></span><br />
+			  <span class="excerpt">Una empresa familiar que ha sabut créixer ordenadament i que dona feina a moltes famílies de Camprodon.</span></td>
+			<td width="116" valign="top" nowrap="nowrap">Vots actuals:<br /><div class="requadre_vots">
+				<div class="requadre_borde">
+					<div class="requadre_color vermell" style="width: 114px"></div>
+				</div><span class="bold">46.38%</span> (3308)
+			</div>
+			</td>  
+			
+			<td valign="top" nowrap="nowrap" class="t14 blau"><form style="margin: 15px 0 0 0" action="votacions.php" name="form12" id="form12" method="post"><input type="hidden" name="c" id="c" value="5"><input type="hidden" name="d" id="d" value="12"><input type="hidden" name="h" id="h" value="eqwoitvyopmcqghiurvmhgi5urqcfjiochsgf9042t4809mgycfhoieanfghoighgjsuvng90q34cmghq12rwt8mc4qg3qvg632awcgcvwm84p9yw3ghawnbr"><input type="hidden" name="v" id="v" value="1"><input type="submit" value="votar" /></form></td>
+		  </tr>
+		  <tr class="liniainf">
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		  </tr>
+		  <tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		  </tr>
+		  <tr class="nolinia2">
+			<td width="130" valign="top" class="liniadta t17"><img src="img/img_candidat.jpg" alt="" width="100" height="75" /></td>
+			<td valign="top"><span class="t17"><strong>Casals Ventilació</strong></span><br />
+			  <span class="excerpt">Per la seva aposta pel territori i amb la innovació amb els nous purificadors per la lluita contra la Covid-19.</span></td>
+			<td width="116" valign="top" nowrap="nowrap">Vots actuals:<br /><div class="requadre_vots">
+				<div class="requadre_borde">
+					<div class="requadre_color vermell" style="width: 11px"></div>
+				</div><span class="bold">4.33%</span> (309)
+			</div>
+			</td>  
+			
+			<td valign="top" nowrap="nowrap" class="t14 blau"><form style="margin: 15px 0 0 0" action="votacions.php" name="form11" id="form11" method="post"><input type="hidden" name="c" id="c" value="5"><input type="hidden" name="d" id="d" value="11"><input type="hidden" name="h" id="h" value="eqwoitvyopmcqghiurvmhgi5urqcfjiochsgf9042t4809mgycfhoieanfghoighgjsuvng90q34cmghq11rwt8mc4qg3qvg632awcgcvwm84p9yw3ghawnbr"><input type="hidden" name="v" id="v" value="1"><input type="submit" value="votar" /></form></td>
+		  </tr>
+		  <tr class="liniainf">
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		  </tr>
+		  <tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		  </tr></table>
+</div><!-- container -->
+<script type="text/javascript"> Cufon.now(); </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  2617  100  2353  100   264  25576   2869 --:--:-- --:--:-- --:--:-- 28445
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Onzena Edici&oacute; Ripoll&egrave;s L&iacute;ders 2020</title>
+<link href="estils.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/calibri.font.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	Cufon.replace('.Calibri', { fontFamily: 'calibri' });
+});
+
+//TopUp.images_path = "js/topup/images/top_up/";
+//TopUp.players_path = "js/topup/players/";
+
+function borra_input(caixa,texte){
+	if(caixa.value==texte){
+		caixa.value = "";
+	}
+}
+
+function restaura_input(caixa,texte){
+	if(caixa.value==""){
+		caixa.value=texte;
+	}
+}
+
+</script></head>
+
+<body style="background-color: black">
+<div id="container">
+  
+     <div id="head-home">
+    	<div id="url" class="t15"  style="display:none">www.ripollesliders.cat</div>
+        <div id="text_head" style="display:none">
+        <span class="Calibri t24">Inscriu-te i registra't <br />per participar als premis.</span><br /><span class="Calibri italic t15 lh08">Atenció, només els usuaris registrats poden<br />afegir candidatures, votar i participar.</span><br /><br />
+        <a href="inscripcio.php"><img src="img/boto_inscriu.gif" alt="" width="280" height="65" border="0" /></a></div>
+    </div><!-- head -->
+    <div id="subhead">
+    	<div id="menu" class="Calibri blanc t17 nosub"><a href="presentacio.php">Presentació</a> | <a href="candidatures.php">Categories</a> | <a href="bases.php">Bases</a> |  <a href="entitats.php">Entitats</a> | <a href="contacte.php">Contacte</a> | <a href="registre.php">Registra't ara</a></div>
+        <div id="login"  style="background-color:#F00">
+                <span class="Calibri blanc t17 nosub">Benvingut/da Agustín! | <a href="registre.php">Modificar dades</a> | <a href="logout.php">Sortir</a></span>
+                </div>
+    </div></div><!-- container -->
+<div class="avis Calibri t15" style="color:#000000">
+
+  <h3>&nbsp;</h3>
+  <h3>&nbsp;</h3>
+</div>
+<script type="text/javascript"> Cufon.now(); </script>
+</body>
+</html>

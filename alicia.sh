@@ -7,8 +7,9 @@ IFS="
 "
 for DATA in $(cat "${DIRNAME}/registre.txt");
 do
-    USERNAME=$(cat /dev/urandom | tr -dc 'a-z' | fold -w 15 | head -n 1)
-    PASSWORD=$(cat /dev/urandom | tr -dc 'a-z' | fold -w 15 | head -n 1)
+    TAMANY="$(echo $RANDOM | grep -Eo ^[0-9] | head -n1)"
+    USERNAME=$(cat /dev/urandom | tr -dc 'a-z' | fold -w 1${TAMANY} | head -n 1)
+    PASSWORD=$(cat /dev/urandom | tr -dc 'a-z' | fold -w 8 | head -n 1)
 
     NOM=$(echo "$DATA" | cut -f1 -d:)
     DNI=$(echo "$DATA" | cut -f2 -d:)
@@ -30,5 +31,10 @@ do
 
     echo "$USERNAME:$PASSWORD" >> passwordgen.txt
 
-    sleep "$(echo $RANDOM | grep -Eo ^[0-9])m"
+    SLEEP="$(echo $RANDOM | grep -Eo ^[0-9][0-9])"
+    sleep "${SLEEP-1}s"
 done
+IFS="${OLD_IFS}"
+
+echo "FI"
+
