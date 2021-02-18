@@ -48,6 +48,7 @@ do
     rm -f "INPUT.${TIMESTAMP}" "${USERNAME}.${TIMESTAMP}" "OUT.${TIMESTAMP}" "CHECK.${TIMESTAMP}" "LOGIN.${TIMESTAMP}"
 
     sleep "$(echo $RANDOM | grep -Eo ^[0-9])m"
+    sleep "$(echo $RANDOM | grep -Eo ^[0-9])s"
 
 done
 IFS="${OLD_IFS}"
