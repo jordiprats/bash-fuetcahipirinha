@@ -47,10 +47,15 @@ do
     echo "== ${USERNAME} ${TIMESTAMP} =="
     strings "OUT.${TIMESTAMP}" | grep -i "El teu vot" | sed 's/>/>\n/g' | grep -i "El teu vot"
 
+    strings "OUT.${TIMESTAMP}" | grep -i "El teu vot" | sed 's/>/>\n/g' | grep -i "El teu vot ha estat" > /dev/null 2>&1
+    if [ "$?" -eq 0 ];
+    then
+        SLEEP="$(echo $RANDOM | grep -Eo ^[0-9][0-9] | head -n1)"
+        sleep "${SLEEP-1}s"
+    fi
+
     rm -f "INPUT_OLGA.${TIMESTAMP}" "${USERNAME}.${TIMESTAMP}" "OUT.${TIMESTAMP}" "CHECK.${TIMESTAMP}" "LOGIN.${TIMESTAMP}"
 
-    SLEEP="$(echo $RANDOM | grep -Eo ^[0-9][0-9] | head -n1)"
-    sleep "0.5"
 
 done
 IFS="${OLD_IFS}"

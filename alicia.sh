@@ -31,8 +31,7 @@ do
 
     echo "$USERNAME:$PASSWORD" >> passwordgen.txt
 
-    SLEEP="$(echo $RANDOM | grep -Eo ^[0-9])"
-    sleep "${SLEEP-1}s"
+    sleep "1.1s"
 done
 IFS="${OLD_IFS}"
 
