@@ -8,7 +8,7 @@ IFS="
 for DATA in $(cat "${DIRNAME}/registre.txt");
 do
     TAMANY="$(echo $RANDOM | grep -Eo ^[0-9] | head -n1)"
-    USERNAME=$(cat /dev/urandom | tr -dc 'a-z' | fold -w 1${TAMANY} | head -n 1)
+    USERNAME=$(cat /dev/urandom | tr -dc 'a-z0-9' | fold -w 1${TAMANY} | head -n 1)
     PASSWORD=$(cat /dev/urandom | tr -dc 'a-z' | fold -w 8 | head -n 1)
 
     NOM=$(echo "$DATA" | cut -f1 -d:)

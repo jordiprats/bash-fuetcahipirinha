@@ -47,9 +47,7 @@ do
 
     rm -f "INPUT.${TIMESTAMP}" "${USERNAME}.${TIMESTAMP}" "OUT.${TIMESTAMP}" "CHECK.${TIMESTAMP}" "LOGIN.${TIMESTAMP}"
 
-    SLEEP="$(echo $RANDOM | grep -Eo [0-5] | head -n1)"
-    sleep "${SLEEP-1}m"
-    SLEEP="$(echo $RANDOM | grep -Eo ^[0-9] | head -n1)"
+    SLEEP="$(echo $RANDOM | grep -Eo ^[0-9][0-9] | head -n1)"
     sleep "${SLEEP-1}s"
 
 done
