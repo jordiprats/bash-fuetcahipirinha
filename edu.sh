@@ -38,7 +38,8 @@ do
 
     CURL_VOT="${CURL_VOT} \"http://ripollesliders.cat/votacions.php?c=5\""
 
-    sleep "$(echo $RANDOM | grep -Eo ^[0-9])s"
+    #sleep "$(echo $RANDOM | grep -Eo ^[0-9])s"
+    sleep 0.4
 
     echo $CURL_VOT | bash > "OUT.${TIMESTAMP}" 2>/dev/null
 
@@ -48,8 +49,9 @@ do
     strings "OUT.${TIMESTAMP}" | grep -i "El teu vot" | sed 's/>/>\n/g' | grep -i "El teu vot ha estat" > /dev/null 2>&1
     if [ "$?" -eq 0 ];
     then
-        SLEEP="$(echo $RANDOM | grep -Eo ^[0-9] | head -n1)"
-        sleep "${SLEEP-1}s"
+        #SLEEP="$(echo $RANDOM | grep -Eo ^[0-9] | head -n1)"
+        #sleep "${SLEEP-1}s"
+        sleep 0.3
     fi
 
     rm -f "INPUT.${TIMESTAMP}" "${USERNAME}.${TIMESTAMP}" "OUT.${TIMESTAMP}" "CHECK.${TIMESTAMP}" "LOGIN.${TIMESTAMP}"
